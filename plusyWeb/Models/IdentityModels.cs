@@ -28,6 +28,7 @@ namespace plusyWeb.Models
         public DbSet<Wojewodztwo> Wojewodztwa { get; set; }
         public DbSet<Bohater> Bohaterowie { get; set; }
         public DbSet<Zadanie> Zadania { get; set; }
+        public DbSet<ZadanieBohatera> ZadaniaBohaterow { get; set; }
 
         public static ApplicationDbContext Create()
         {

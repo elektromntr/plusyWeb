@@ -17,16 +17,20 @@ namespace plusyWeb.Models
         [Display(Name ="Imię")]
         public string Imie { get; set; }
 
-        public int WolewodztwoId { get; set; }
-
-        [Required(ErrorMessage ="Podaj województwo, w którym mieszka Twój Bohater")]
-        [ForeignKey("WojewodztwoId")]
+        [Required(ErrorMessage = "Podaj województwo, w którym mieszka Twój Bohater")]
         [Display(Name = "Województwo")]
+        public int WojewodztwoId { get; set; }
+                
+        [ForeignKey("WojewodztwoId")]
         public virtual Wojewodztwo WojewodztwoBohatera { get; set; }
 
         [Required(ErrorMessage ="Podaj rok urodzenia Bohatera")]
         [Display(Name ="Rok urodzenia")]
         public int RokUrodzenia { get; set; }
-        
+
+        public virtual ICollection<Zadanie> Zadania { get; set; }
+
+        public virtual ICollection<ZadanieBohatera> ZadaniaBohatera { get; set; }
+
     }
 }

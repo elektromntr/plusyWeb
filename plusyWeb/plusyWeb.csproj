@@ -168,8 +168,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BohaterowieController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\WojewodztwaController.cs" />
+    <Compile Include="Controllers\ZadaniaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -179,6 +182,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Wojewodztwo.cs" />
     <Compile Include="Models\Zadanie.cs" />
+    <Compile Include="Models\ZadanieBohatera.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -237,6 +241,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Bohaterowie\Create.cshtml" />
+    <Content Include="Views\Bohaterowie\Delete.cshtml" />
+    <Content Include="Views\Bohaterowie\Details.cshtml" />
+    <Content Include="Views\Bohaterowie\Edit.cshtml" />
+    <Content Include="Views\Bohaterowie\Index.cshtml" />
+    <Content Include="Views\Wojewodztwa\Create.cshtml" />
+    <Content Include="Views\Wojewodztwa\Delete.cshtml" />
+    <Content Include="Views\Wojewodztwa\Details.cshtml" />
+    <Content Include="Views\Wojewodztwa\Edit.cshtml" />
+    <Content Include="Views\Wojewodztwa\Index.cshtml" />
+    <Content Include="Views\Zadania\Create.cshtml" />
+    <Content Include="Views\Zadania\Delete.cshtml" />
+    <Content Include="Views\Zadania\Details.cshtml" />
+    <Content Include="Views\Zadania\Edit.cshtml" />
+    <Content Include="Views\Zadania\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
